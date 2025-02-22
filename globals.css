@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --terminal-green: #0dfc8f;
+}
+
+body {
+  background-color: black;
+  font-feature-settings: "calt" 0;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: none;
+}
+
+::selection {
+  background: var(--terminal-green);
+  color: black;
+}
+
+@keyframes cursor-blink {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
